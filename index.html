@@ -20,7 +20,7 @@ html{scroll-behavior:smooth}
 .system-node{position:relative;z-index:1;background:#F4EFE5;border:1px solid #C9C0B3;padding:.65rem .8rem}
 .project-evidence{background:#ECE5DA;border:1px solid #C9C0B3;min-height:170px;display:flex;align-items:center;justify-content:center}
 body{background:#F4EFE5;color:#171411}::selection{background:#D94B24;color:#F4EFE5}
-.hairline{border-color:#C9C0B3}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+.hairline{border-color:#C9C0B3}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}.reveal.visible{opacity:1;transform:translateY(0)}.hero-image-wrap{opacity:0;transform:translateY(24px) scale(.985);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}.hero-image-wrap.visible{opacity:1;transform:translateY(0) scale(1)}.hero-name{letter-spacing:-.055em}@media (prefers-reduced-motion:reduce){.reveal,.hero-image-wrap{transition:none;transform:none!important}}
 .project-row{transition:background .3s ease}.proof-card img{transition:transform .5s ease}.proof-card:hover img{transform:scale(1.025)}.external-link{display:inline-flex;align-items:center;gap:.45rem;border-bottom:1px solid #171411;padding-bottom:.2rem}.external-link:hover{color:#D94B24;border-color:#D94B24}.project-row:hover{background:rgba(217,75,36,.035)}.arrow{transition:transform .3s ease}.project-row:hover .arrow{transform:translate(4px,-4px)}
 .nav-overlay{opacity:0;pointer-events:none;transition:opacity .3s ease}.nav-overlay.open{opacity:1;pointer-events:auto}
 .menu-line{transition:transform .3s ease,opacity .3s ease;transform-origin:center}.menu-open .line1{transform:translateY(5px) rotate(45deg)}.menu-open .line2{opacity:0}.menu-open .line3{transform:translateY(-5px) rotate(-45deg)}
@@ -52,13 +52,13 @@ body{background:#F4EFE5;color:#171411}::selection{background:#D94B24;color:#F4EF
 <main id="top" class="pt-16">
 <section class="min-h-[calc(100vh-4rem)] flex items-end">
 <div class="w-full max-w-[1400px] mx-auto px-5 md:px-8 pb-14 md:pb-20">
-<div class="grid lg:grid-cols-[1fr_300px] gap-10 lg:gap-16 items-start">
+<div class="grid lg:grid-cols-[minmax(0,1fr)_260px] gap-8 lg:gap-7 items-start">
 <div class="reveal">
-<h1 class="font-serif text-[clamp(4.8rem,12vw,11rem)] leading-[.76] tracking-[-.05em] max-w-5xl">Nidhi<br>Thakur<span class="text-accent">.</span></h1>
+<h1 class="hero-name font-serif text-[clamp(4.8rem,12vw,11rem)] leading-[.76] max-w-5xl">Nidhi<br>Thakur<span class="text-accent">.</span></h1>
 <div class="font-mono text-[11px] uppercase tracking-widest text-muted mt-8"><span class="text-accent">01</span> / AI/ML STUDENT · ASPIRING AI ENGINEER</div>
 <div class="mt-10 font-serif text-[clamp(2.5rem,5vw,5rem)] leading-[.9] tracking-[-.03em]">Things I’m<br>building<span class="text-accent">.</span></div>
 </div>
-<div class="reveal lg:pt-1">
+<div class="hero-image-wrap reveal lg:pt-1">
 <div class="overflow-hidden border hairline bg-[#ECE5DA]">
 <img src="assets/profile.jpg" alt="Nidhi Thakur" class="w-full aspect-[3/4] object-cover object-top">
 </div>
@@ -66,12 +66,12 @@ body{background:#F4EFE5;color:#171411}::selection{background:#D94B24;color:#F4EF
 </div>
 </div>
 <div class="mt-14 grid md:grid-cols-[1fr_auto] gap-8 items-end">
-<div class="reveal max-w-2xl"><p class="text-lg md:text-xl leading-8 text-muted"> A record of the problems, decisions, experiments, and lessons behind the work.</p>
+<div class="reveal max-w-2xl" style="transition-delay:.12s"><p class="text-lg md:text-xl leading-8 text-muted"> A record of the problems, decisions, experiments, and lessons behind the work.</p>
 <div class="mt-7 flex flex-wrap gap-x-5 gap-y-2 font-mono text-[10px] uppercase tracking-wider"><span>Machine Learning</span><span>Computer Vision</span><span>AI Applications</span></div>
 </div>
-<div class="reveal max-w-sm font-serif italic text-2xl md:text-3xl leading-tight text-ink">Learning toward AI systems that can actually do something.</div>
+<div class="reveal max-w-sm font-serif italic" style="transition-delay:.22s text-2xl md:text-3xl leading-tight text-ink">Learning toward AI systems that can actually do something.</div>
 </div>
-<div class="mt-16 border-t hairline pt-5 flex flex-col md:flex-row md:justify-between gap-3 font-mono text-[10px] uppercase tracking-wider text-muted"><span class="font-semibold">B.E. Artificial Intelligence & Machine Learning</span><span class="font-semibold md:text-right">2023 — 2027 · CGPA 8.7/10</span></div>
+<div class="mt-16 border-t hairline pt-5 flex flex-col md:flex-row md:justify-between gap-3 font-mono text-[13px] uppercase tracking-wider text-muted"><span class="font-bold">B.E. Artificial Intelligence & Machine Learning</span><span class="font-bold md:text-right">2023 — 2027 · CGPA 8.7/10</span></div>
 </div></section>
 
 <section id="work" class="max-w-[1400px] mx-auto px-5 md:px-8 py-28 md:py-40">
