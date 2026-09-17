@@ -56,6 +56,12 @@ body{background:#F4EFE5;color:#171411}::selection{background:#D94B24;color:#F4EF
 .group:hover .writing-cover .medium-cover{transform:scale(1.025)}
 @media (prefers-reduced-motion:reduce){.writing-cover .medium-cover{transition:none}}
 
+
+.communication-proof img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.22,1,.36,1)}
+.communication-proof{overflow:hidden}
+.communication-proof:hover img{transform:scale(1.025)}
+@media (prefers-reduced-motion:reduce){.communication-proof img{transition:none}}
+
 </style>
 <style>
 
@@ -144,7 +150,7 @@ body{background:#F4EFE5;color:#171411}::selection{background:#D94B24;color:#F4EF
 
 </section>
 
-<section class="border-t hairline"><div class="max-w-[1400px] mx-auto px-5 md:px-8 py-28 md:py-36"><div class="font-mono text-[11px] uppercase tracking-widest mb-8"><span class="text-accent">02.1</span> / Proof outside the screen</div><div class="grid lg:grid-cols-[.75fr_1.25fr] gap-12 lg:gap-24 items-start"><div><h2 class="font-serif text-6xl md:text-8xl leading-[.82] tracking-[-.04em]">Some things<br>had to be<br>done in the real world.</h2><p class="mt-8 text-lg leading-8 text-muted max-w-md">Building is not only code. These are a few moments from presenting, competing, and working with people.</p></div><div class="grid md:grid-cols-2 gap-5"><figure class="proof-card md:row-span-2 border hairline bg-[#ECE5DA] overflow-hidden"><img src="assets/public-speaking.jpg" alt="Nidhi presenting on stage" class="w-full h-[430px] md:h-full object-cover"><figcaption class="p-4 font-mono text-[9px] uppercase">Public speaking / presentation</figcaption></figure><figure class="proof-card border hairline bg-[#ECE5DA] overflow-hidden"><img src="assets/team-event.jpg" alt="Nidhi and teammates at Robotex India National Championship 2026" class="w-full h-64 object-cover"><figcaption class="p-4 font-mono text-[9px] uppercase">Robotex India National Championship 2026</figcaption></figure><figure class="proof-card border hairline bg-[#ECE5DA] overflow-hidden"><img src="assets/team-competition.jpg" alt="Nidhi holding a presentation certificate and project material" class="w-full h-64 object-cover"><figcaption class="p-4 font-mono text-[9px] uppercase">Standard Presentation Competition / recognition</figcaption></figure></div></div></div></section>
+<section class="border-t hairline"><div class="max-w-[1400px] mx-auto px-5 md:px-8 py-28 md:py-36"><div class="font-mono text-[11px] uppercase tracking-widest mb-8"><span class="text-accent">02.1</span> / Proof outside the screen</div><div class="grid lg:grid-cols-[.75fr_1.25fr] gap-12 lg:gap-24 items-start"><div><h2 class="font-serif text-6xl md:text-8xl leading-[.82] tracking-[-.04em]">Some things<br>had to be<br>done in the real world.</h2><p class="mt-8 text-lg leading-8 text-muted max-w-md">Building is not only code. These are a few moments from presenting, competing, and working with people.</p></div><div class="grid md:grid-cols-2 gap-5"><figure class="proof-card md:row-span-2 border hairline bg-[#ECE5DA] overflow-hidden"><img src="assets/speaking.jpg" alt="Nidhi presenting on stage" class="w-full h-[430px] md:h-full object-cover"><figcaption class="p-4 font-mono text-[9px] uppercase">Public speaking / presentation</figcaption></figure><figure class="proof-card border hairline bg-[#ECE5DA] overflow-hidden"><img src="assets/robotex.jpg" alt="Nidhi and teammates at Robotex India National Championship 2026" class="w-full h-64 object-cover"><figcaption class="p-4 font-mono text-[9px] uppercase">Robotex India National Championship 2026</figcaption></figure><figure class="proof-card border hairline bg-[#ECE5DA] overflow-hidden"><img src="assets/presentation.jpg" alt="Nidhi holding a presentation certificate and project material" class="w-full h-64 object-cover"><figcaption class="p-4 font-mono text-[9px] uppercase">Standard Presentation Competition / recognition</figcaption></figure></div></div></div></section>
 
 <section id="communication" class="border-t hairline py-20 md:py-28"><div class="reveal">
   <div class="grid md:grid-cols-[180px_1fr] gap-8 md:gap-16">
@@ -187,14 +193,14 @@ body{background:#F4EFE5;color:#171411}::selection{background:#D94B24;color:#F4EF
       </div>
 
       <div class="mt-12 grid md:grid-cols-3 gap-5">
-        <div class="overflow-hidden border hairline bg-[#ECE5DA]">
-          <img src="assets/speaking.jpg" alt="Public speaking" class="w-full aspect-[4/3] object-cover">
+        <div class="communication-proof overflow-hidden border hairline bg-[#ECE5DA]">
+          <img src="assets/public-speaking.jpg" alt="Public speaking" class="w-full aspect-[4/3] object-cover">
         </div>
-        <div class="overflow-hidden border hairline bg-[#ECE5DA]">
-          <img src="assets/presentation.jpg" alt="Team competition experience" class="w-full aspect-[4/3] object-cover">
+        <div class="communication-proof overflow-hidden border hairline bg-[#ECE5DA]">
+          <img src="assets/team-competition.jpg" alt="Team competition experience" class="w-full aspect-[4/3] object-cover">
         </div>
-        <div class="overflow-hidden border hairline bg-[#ECE5DA]">
-          <img src="assets/robotex.jpg" alt="Team competition experience" class="w-full aspect-[4/3] object-cover">
+        <div class="communication-proof overflow-hidden border hairline bg-[#ECE5DA]">
+          <img src="assets/team-event.jpg" alt="Team competition experience" class="w-full aspect-[4/3] object-cover">
         </div>
       </div>
 
@@ -218,7 +224,7 @@ body{background:#F4EFE5;color:#171411}::selection{background:#D94B24;color:#F4EF
 
 <section id="now" class="border-t hairline"><div class="max-w-[1400px] mx-auto px-5 md:px-8 py-28 md:py-40">
 <div class="font-mono text-[11px] uppercase tracking-widest mb-8"><span class="text-accent">04</span> / Now</div><h2 class="font-serif text-[clamp(4rem,10vw,9rem)] leading-[.82] tracking-[-.04em] max-w-4xl">What I’m doing<br>now.</h2>
-<p class="mt-10 text-lg md:text-xl text-muted max-w-2xl leading-8">A living page. Less like a list of achievements, more like a pin dropped on the map.</p><div class="mt-7 font-mono text-[10px] uppercase tracking-widest text-muted">Last updated / September 2026</div>
+<p class="mt-10 text-lg md:text-xl text-muted max-w-2xl leading-8">Things I’m learning, building, and working on right now.</p><div class="mt-7 font-mono text-[10px] uppercase tracking-widest text-muted">Last updated / September 2026</div>
 <div class="mt-16 grid md:grid-cols-3 gap-10">
 <div class="border-t border-ink pt-5"><div class="font-mono text-[10px] text-accent">01 / Learning</div><ul class="mt-6 divide-y hairline border-y hairline"><li class="py-4">AI engineering foundations</li><li class="py-4">Generative AI</li><li class="py-4">RAG</li></ul></div>
 <div class="border-t border-ink pt-5"><div class="font-mono text-[10px] text-accent">02 / Building</div><ul class="mt-6 divide-y hairline border-y hairline"><li class="py-4">Designing the NIKO concept</li><li class="py-4">RAG / LLM foundations</li><li class="py-4">Production-minded AI engineering</li></ul></div>
